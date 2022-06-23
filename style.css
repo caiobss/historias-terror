@@ -60,6 +60,10 @@ body{
     font-size: 2.8rem;
 }
 
+.left .txt-historia legend{
+    font-size: 13.5px;
+}
+
 .right{
     position: relative;
     background-color: #E0E0E0;
