@@ -1,0 +1,117 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(49, 50, 54);
+}
+
+.sessao-historia{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia{
+    height: 80%;
+    width: 65%;
+    display: flex;
+}
+
+.left{
+    position: relative;
+    background-color: #272a2c;
+    color: #E0E0E0;
+    height: 100%;
+    width: 40%;
+}
+
+.left .img-historia{
+    height: 100%;
+    width: 100%;
+}
+
+.left .img-historia img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+
+.left .txt-historia{
+    top: 0%;
+    position: absolute;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .txt-historia h1{
+    font-size: 2.8rem;
+}
+
+.right{
+    position: relative;
+    background-color: #E0E0E0;
+    color: #272a2c;
+    height: 100%;
+    width: 60%;
+}
+
+.right .content-historia{
+    padding: 3% 10%;
+}
+
+.right .buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 3%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.right .buttons i{
+    color: #272a2c;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.right h1{
+    font-size: 1.5rem;
+    padding: 4% 0;
+}
+
+.right p{
+    font-size: 13.5px;
+}
+
+/*responsivo*/
+
+@media (max-width: 950px){
+    .historia{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+    
+    .left{
+        height: 90%;
+        width: 100%;
+    }
+}
